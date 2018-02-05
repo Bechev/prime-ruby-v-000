@@ -10,12 +10,12 @@ def prime?(number)
 
     i=2
     while i*i <= number
-      if number % i == 0 || number % (i + 1) == 0
+      if number % i == 0
         return false
       else
         i = i + 1
       end
-      return true
     end
+    return true
   end
 end
