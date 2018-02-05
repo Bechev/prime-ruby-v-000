@@ -7,14 +7,16 @@ def prime?(number)
   elsif number % 2 == 0 || number % 3 ==0
     return false
   else
+
     i=2
     while i*i <= number
       if number % i == 0
-        return false
+        i += 1
       else
         return true
       end
       i += 1
     end
+    return false
   end
 end
