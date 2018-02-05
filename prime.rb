@@ -9,7 +9,7 @@ def prime?(number)
   else
     i=5
     while i*i <= number
-      if n%i == 0 || n%(i+2) == 0
+      if number % i == 0 || number % (i+2) == 0
         return false
       else
         return true
